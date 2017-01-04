@@ -1,0 +1,39 @@
+name:                render-document
+version:             0.1.0.0
+synopsis:            An example application for learning purposes.
+description:         Please see README.md
+homepage:            https://github.com/dgendill/render-document
+license:             MIT
+license-file:        LICENSE
+author:              Dominick Gendill
+copyright:           2017 Dominick Gendill
+category:            Learning
+build-type:          Simple
+cabal-version:       >=1.10
+extra-source-files:  README.md
+
+executable render-document-example
+  hs-source-dirs:      src
+  main-is:             Main.hs
+  default-language:    Haskell2010
+  build-depends:       base >= 4.7 && < 5
+
+library
+  hs-source-dirs:      src
+  exposed-modules:     Document
+  other-modules:       State
+  default-language:    Haskell2010
+  build-depends:       base >= 4.7 && < 5
+
+test-suite render-document-test
+  type:                exitcode-stdio-1.0
+  hs-source-dirs:      test,src
+  main-is:             Main.hs
+  other-modules:       Document, State
+  build-depends:       base
+                     , render-document
+                     , hspec
+                     , QuickCheck
+                     , checkers
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  default-language:    Haskell2010
