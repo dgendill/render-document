@@ -28,8 +28,8 @@ Primarily, this is an example library for beginners, and was done as an
 exercise.  It is usable, but I'm sure there are better options out there.
 
 # Changelog
-Jan 7 - Initial work on parser that goes from text to document structure.
-Jan 3 - Initial commit.  Can render document to text.
+- Jan 7, Initial work on parser that goes from text to document structure.
+- Jan 3, Can render document to text.
 
 # Library Usage
 
