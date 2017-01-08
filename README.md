@@ -27,6 +27,10 @@ at the parent's indentation level plus it's own.
 Primarily, this is an example library for beginners, and was done as an
 exercise.  It is usable, but I'm sure there are better options out there.
 
+# Changelog
+Jan 7 - Initial work on parser that goes from text to document structure.
+Jan 3 - Initial commit.  Can render document to text.
+
 # Library Usage
 
 As a library, you should be able to simply import `Document(..)` construct a
@@ -36,6 +40,11 @@ value with type Document and then turn it into a String using `show`.
 >>> show example
 "  \n  Every man is the builder of a temple,\n    called his body, to the god he worships,\n    after a style purely his own,\n      we are all sculpters and painters, and our\n      material is our own flesh and blood \n      and bones.\n      \n      - Henry David Thoreau"
 ```
+
+# Tests
+
+You can see parser tests by running `stack test`.  For continuous tests that
+rerun when files change run `./dev-test.sh`
 
 # Documentation
 
